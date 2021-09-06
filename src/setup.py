@@ -38,8 +38,9 @@ ext_modules = [
       include_dirs = [],
       library_dirs=[],
       define_macros=[('LIBPYTHON_SO','"'+libpython_so+'"')] + Py_DEBUG,
-      libraries=["pam"],
+      libraries=["pam", 'python3.7m'],
     ), ]
+
 
 setup(
   name="pam_python",
