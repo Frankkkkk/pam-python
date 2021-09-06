@@ -64,6 +64,10 @@
 
 #define arr_size(x)	(sizeof(x) / sizeof(*(x)))
 
+#ifndef __STRING
+#define __STRING(x)	#x
+#endif
+
 const char libpam_python_version[]	= "1.0.3";
 const char libpam_python_date[]		= "2014-05-05";
 
